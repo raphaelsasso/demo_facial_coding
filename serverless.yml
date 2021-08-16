@@ -1,0 +1,16 @@
+org: offerwisedev
+app: facialcoding
+service: facialcoding
+
+provider:
+  name: aws
+
+plugins:
+  - serverless-finch
+
+custom:
+  client:
+    bucketName: ow-facial-coding-demo
+    distributionFolder: .
+    indexDocument: index.html
+    errorDocument: index.html
